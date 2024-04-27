@@ -8,6 +8,6 @@ function insert_Row() {
                   <td>NewCell${inserCount}</td>
                   <td>NewCell${inserCount + 1}</td>
                   `;
-  table.appendChild(tr);
+table.insertBefore(tr, table.firstChild);
   inserCount++;
 }

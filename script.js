@@ -1,13 +1,12 @@
-
 let table = document.getElementById("sampleTable");
-// let inserCount = 1;
+let insertCount = 1;
+
 function insert_Row() {
-  //Write your code here
-  let tr = document.createElement("tr");
-  tr.innerHTML = `
-                  <td>New Cell1</td>
-                  <td>New Cell2</td>
-                  `;
-table.insertBefore(tr, table.firstChild);
-  inserCount++;
+    let tr = document.createElement("tr");
+    tr.innerHTML = `
+        <td>New Cell${insertCount}</td>
+        <td>New Cell${insertCount + 1}</td>
+    `;
+    table.insertBefore(tr, table.firstChild);
+    insertCount += 2;
 }

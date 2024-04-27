@@ -5,8 +5,8 @@ function insert_Row() {
   //Write your code here
   let tr = document.createElement("tr");
   tr.innerHTML = `
-                  <td>NewCell${inserCount}</td>
-                  <td>NewCell${inserCount + 1}</td>
+                  <td>New Cell${inserCount}</td>
+                  <td>New Cell${inserCount + 1}</td>
                   `;
 table.insertBefore(tr, table.firstChild);
   inserCount++;
